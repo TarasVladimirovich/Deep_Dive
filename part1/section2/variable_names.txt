@@ -1,0 +1,20 @@
+Must
+start with underscore (_) or letter (a-z, A_Z)
+    followed by any number of underscores (_), letters (a-z, A_Z), or digits (0-9)
+    Examples:
+    var, my_var, index1, _var, __ver, __var__
+
+cannot be reserved words:
+
+Conventions:
+_my_var - internal use or private
+__my_var - used to "mangle" class attributes - useful in inheritance chains
+__my_var__ - magic operators
+
+PEP 8 Style Guide Best practice
+Packages - short, lowercase, no underscores: utilities
+Modulus - short, lowercase, can have underscores: db_utils, dbutils
+Classes - CapWOrds: BankAccount
+Functions - snake_case: open_account
+Variables - same as fun: account_id
+Constants - Uppercase with underscores: MIN_APR
