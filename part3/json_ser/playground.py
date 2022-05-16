@@ -33,5 +33,7 @@ class Person:
 
 
 p = Person('Ivan', 36)
+# p.platform = 'test'
 print(p.toJSON())
 print(json.dumps({'ivan': p.toJSON()}, indent=2))
+
