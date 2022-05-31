@@ -1,12 +1,19 @@
-import string
+# import string
+#
+# q = {i: ord(i) for i in string.ascii_lowercase}
+# print(q)
+#
+# print(q.get('a'))
+# print(q.get('A', 'takkoe'))
+#
+# qw = 'qwerty'
+#
+# for i in enumerate(qw):
+#     print(i)
 
-q = {i: ord(i) for i in string.ascii_lowercase}
-print(q)
+q = filter(lambda x: 'a' in x, ['a', 'b', 'a', 'v'])
+assert filter(lambda x: 'aqw' in x, ['a', 'b', 'a', 'v'])
+assert [1]
 
-print(q.get('a'))
-print(q.get('A', 'takkoe'))
+# print(list(q))
 
-qw = 'qwerty'
-
-for i in enumerate(qw):
-    print(i)
