@@ -1,0 +1,9 @@
+user2_ring_account:
+    dev: &dev_account2
+        login: automaton2@gmail.com
+        password: PASSWORD
+        auth_token:
+        refresh_token:
+    prod: *dev_account2
+    qa: *dev_account2
+    staging: *dev_account2

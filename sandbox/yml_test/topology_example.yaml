@@ -1,0 +1,31 @@
+---
+inventory:
+  # ssh userName and password for all the virtual machines
+  ssh_user: "root"
+  ssh_password: "a_password"
+  # the controller that will have the API
+  app_user: "admin"
+  app_password: "admin123"
+  # the controller that will have the API
+  controller:
+    ip: "xx.x.x.x1"
+    hostname: "mip-x.x.x.x.net"
+  # The gateway to use
+  gateway:
+    - ip: "xx.x.x.x2"
+      hostname: "mip-x.x.x.x.net"
+      q:
+        w: 'takoe'
+        e: 'qwert'
+  epic:
+  datafabric:
+# these are the hosts
+  hosts:
+    - ip: "xx.x.x.x3"
+      hostname: "mip-x.x.x.x.net"
+    - ip: "xx.x.x.x4"
+      hostname: "mip-x.x.x.x.net"
+    - ip: "xx.x.x.x5"
+      hostname: "mip-x.x.x.x.net"
+  gpu:
+ssl_api: False
