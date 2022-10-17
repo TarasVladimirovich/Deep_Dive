@@ -12,17 +12,22 @@
 #     return inner
 
 
-from functools import  wraps
+from functools import wraps
+
+
 def counter(fn):
     count = 0
+
     @wraps(fn)
     def inner(*args, **kwargs):
         nonlocal count
         count += 1
         print(f'fn {fn.__name__}, was calles {count} times')
         return fn(*args, **kwargs)
+
     # inner = wraps(fn)(inner())
     return inner
+
 
 @counter
 def mult(a, b, c):
@@ -33,6 +38,7 @@ def mult(a, b, c):
     :param c:
     :return:
     """
-    return  a*b*c
+    return a * b * c
+
 
 print(mult.__name__)
