@@ -4,7 +4,7 @@ import bs4
 base_url = 'https://quotes.toscrape.com/'
 result = requests.get(base_url)
 soup = bs4.BeautifulSoup(result.text, 'lxml')
-# print(soup)
+print(soup)
 
 tags = set()
 for tag in soup.select('.tag-item'):
