@@ -1,9 +1,9 @@
-# import collections
-#
-# print(isinstance(0, collections.Hashable))
-# print(isinstance({1: 1}, collections.Hashable))
-# print(isinstance((1, 2), collections.Hashable))
-# print(isinstance((1, [1, 2, 3]), collections.Hashable))
+import collections
+
+print(isinstance(0, collections.Hashable))
+print(isinstance({1: 1}, collections.Hashable))
+print(isinstance((1, 2), collections.Hashable))
+print(isinstance((1, [1, 2, 3]), collections.Hashable))
 v = ([], 2)
 try:
     print(hash(v))
