@@ -3,3 +3,4 @@ venv/
 sandbox/
 work/
 __pycache__/
+.pytest_cache/
